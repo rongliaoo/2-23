@@ -1,0 +1,23 @@
+'''
+list1 = ["Hello\n", "Aloha\n"]
+outfile = open("Greetings2.txt",'a')
+outfile.writelines(list1)
+outfile.close()
+infile = open("Greetings2.txt",'r')
+text = infile.read().rstrip()
+infile.close()
+print(text)
+'''
+#print(set("Bookkeeper"))
+#print(len(set("Bookkeeper")))
+#print(sorted(set([3, 4, 1, 4, 3])))
+#print(sorted({x**2 for x in range(-2,3)}))
+'''
+s = {"Believe", "yourself."}
+s.add("in")
+print(s)
+print(" ".join(sorted(s)))
+'''
+s = {"Always", "up", "give", "Never"}
+s.discard("Always")
+print(" ". join(sorted(s, key = len, reverse = True)))

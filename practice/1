@@ -1,0 +1,11 @@
+outfile = open("Greetings.txt","w")
+outfile.write("Hello\n")
+outfile.write("Aloha\n")
+outfile.write("Aloha\n")
+outfile.close()
+
+infile = open("Greetings.txt","r")
+for line in infile:
+    text = infile.readline().rstrip()
+infile.close()
+print(text)
